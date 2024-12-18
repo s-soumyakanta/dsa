@@ -22,5 +22,11 @@ for (let i = insertNum.length - 1; i >= 0; i--) {
 // insertNum.splice(0, 1, 399)
 console.log(insertNum)
 
-
-
+//Delete
+let arrayForDeleteElement = [10, 20, 30, 40, 50]
+let deletePosition = 3
+for (let i = deletePosition; i < arrayForDeleteElement.length - 1; i++) {
+    arrayForDeleteElement[i] = arrayForDeleteElement[i + 1]
+}
+arrayForDeleteElement.length = arrayForDeleteElement.length - 1
+console.log(arrayForDeleteElement)
