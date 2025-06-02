@@ -19,8 +19,8 @@ for (let i = insertNum.length - 1; i >= 0; i--) {
         }
     }
 }
-insertNum.splice(0, 1, 399)
-console.log(insertNum)
+// insertNum.splice(0, 1, 399)
+console.log("ss", insertNum)
 
 //Delete
 let arrayForDeleteElement = [10, 20, 30, 40, 50]
@@ -100,3 +100,21 @@ console.log(arrThree)
 //Array sorting
 //getting repo name
 //Buble sorting
+
+
+let newInsert = [3, 5, 1, 4, 2]
+
+newInsertPosition = 2
+
+for (let ii = newInsert.length - 1; ii >= 0; ii--) {
+
+    if (ii >= newInsertPosition) {
+        newInsert[ii + 1] = newInsert[ii]
+        if (ii == newInsertPosition) {
+            newInsert[ii] = 23
+        }
+    }
+    console.log("33", newInsert[ii])
+}
+newInsert.splice(1, 0, 11)
+console.log("22", newInsert)
