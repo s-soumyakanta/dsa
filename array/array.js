@@ -24,6 +24,7 @@ console.log("ss", insertNum)
 
 //Delete
 let arrayForDeleteElement = [10, 20, 30, 40, 50]
+console.log("xxxxxxx", arrayForDeleteElement.length)
 let deletePosition = 3
 for (let i = deletePosition; i < arrayForDeleteElement.length - 1; i++) {
     arrayForDeleteElement[i] = arrayForDeleteElement[i + 1]
@@ -101,7 +102,7 @@ console.log(arrThree)
 //getting repo name
 //Buble sorting
 
-
+//Insert practice
 let newInsert = [3, 5, 1, 4, 2]
 
 newInsertPosition = 2
@@ -118,3 +119,17 @@ for (let ii = newInsert.length - 1; ii >= 0; ii--) {
 }
 newInsert.splice(1, 0, 11)
 console.log("22", newInsert)
+
+//delete practice
+
+let deleteNames = ["X", "Y", "Z", "A", "B", "C"]
+let deleteNamePosition = 2
+
+for (let i = deleteNamePosition; i <= deleteNames.length - 1; i++) {
+    deleteNames[i] = deleteNames[i + 1]
+    console.log(deleteNames[i])
+
+}
+// deleteNames.pop()
+deleteNames.length = deleteNames.length - 1
+console.log(deleteNames)
