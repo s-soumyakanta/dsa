@@ -74,7 +74,7 @@ console.log(a3)
 
 //Merge Two arry - while loop
 
-let arrOne = [3, 5, 7, 45, 67]
+let arrOne = [3, 5, 7, 45, 67, 65]
 let arrTwo = [4, 6, 8]
 let arrThree = []
 let d1 = 0
@@ -96,7 +96,7 @@ while (d1 < arrOne.length) {
     d1++;
     d3++;
 }
-console.log(arrThree)
+console.log('kk', arrThree)
 
 //Array sorting
 //getting repo name
