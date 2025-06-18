@@ -133,3 +133,21 @@ for (let i = deleteNamePosition; i <= deleteNames.length - 1; i++) {
 // deleteNames.pop()
 deleteNames.length = deleteNames.length - 1
 console.log(deleteNames)
+
+
+//buble sort
+
+let bubSortArr = [23, 433, 234, 53, 89, 98]
+
+for (let i = 0; i <= bubSortArr.length - 1; i++) {
+    for (let j = 0; j <= bubSortArr.length - 1; j++) {
+        if (bubSortArr[j] < bubSortArr[j + 1]) {
+            const temp = bubSortArr[j]
+            bubSortArr[j] = bubSortArr[j + 1]
+            bubSortArr[j + 1] = temp
+        }
+    }
+}
+
+console.log(bubSortArr)
+
