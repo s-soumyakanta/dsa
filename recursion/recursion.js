@@ -58,3 +58,5 @@ function CustomReverse(start, data, end) {
 
 const dd = CustomReverse(0, ToBeReversed.split(''), ToBeReversed.length - 1)
 console.log(dd)
+
+console.log("javascript".split("").reverse())
