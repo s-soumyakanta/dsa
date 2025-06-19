@@ -1,9 +1,9 @@
 
 function recur(x) {
     if (x < 10) {
-        console.log(x)
+        console.log("head recursion", x)
         recur(x + 1)
-        console.log(x)
+        console.log("tail recursion", x)
     }
 }
 
