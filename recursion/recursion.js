@@ -10,6 +10,7 @@ function recur(x) {
 // recur(5)
 
 // factorial 
+//direct recursion
 
 function factorial(x) {
     if (x == 0) {
@@ -19,3 +20,23 @@ function factorial(x) {
 }
 
 console.log(factorial(3))
+
+//indirect recursion 
+let money = 100
+let apple = 0
+function BuyApple(x) {
+    if (x > 0) {
+
+        console.log("money has", x, apple)
+        BuyMore(x)
+    } else {
+        console.log("No money", apple)
+    }
+}
+
+function BuyMore(y) {
+    apple++
+    BuyApple(y - 10)
+
+}
+BuyApple(money)
