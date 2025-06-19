@@ -40,3 +40,21 @@ function BuyMore(y) {
 
 }
 BuyApple(money)
+
+//Reverse Array With Recursion
+
+const ToBeReversed = "APPLE"
+
+function CustomReverse(start, data, end) {
+    // console.log(data)
+    if (start <= end) {
+        let temp = data[start];
+        data[start] = data[end];
+        data[end] = temp;
+        CustomReverse(start + 1, data, end - 1)
+    }
+    return data;
+}
+
+const dd = CustomReverse(0, ToBeReversed.split(''), ToBeReversed.length - 1)
+console.log(dd)
