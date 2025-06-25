@@ -31,3 +31,4 @@ customPush(3)
 customPush(4)
 customPop()
 console.log(newArr)
+
